@@ -1,0 +1,108 @@
+body {
+
+background-image: linear-gradient(90deg, rgb(66, 134, 244), rgb(55, 59, 68));
+
+margin: 0;
+padding: 0;
+height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.card {
+  background-color: white;
+
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+ transition: 1s ease-in-out;
+ border: 3px solid transparent;
+  cursor: pointer;
+  flex: 0 0 calc(30.33% - 20px);
+  max-width: calc(18.90% - 20px);
+  width: 100%;
+
+}
+.card:hover{
+  border-color:#1e3a8a;
+}
+
+.container{
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+  padding: 0px 10px ;
+  
+}
+.section{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text{
+  text-align: center;
+  font-size: 32px;
+  color: #22c55e;
+  animation: key1 .3s ease infinite alternate;
+  
+
+}
+@keyframes key1{
+  0% {transform: translateY(0px);}
+  100% {transform: translateY(-10px);}
+}
+
+
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+
+
+
+  
+}
+h3{
+  color:#1e3a8a;
+  font-size: 20px;
+  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+h4{
+  color: #6b21a8;
+  font-size: 16px;
+  font-weight: lighter;
+  
+}
+@media(max-width:969px){
+  .section{
+    padding: 10px 0px;
+
+  }
+  .text{
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .card{
+    flex:0 0 calc(50% -20px);
+    max-width: calc(50% -20px);
+  }
+}
+@media(max-width:600px){
+ 
+  .card{
+    flex:0 0 100%;
+    max-width:100%;
+  }
+}
+
+
+
+
+
+
